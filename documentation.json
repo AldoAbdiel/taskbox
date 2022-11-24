@@ -1060,7 +1060,7 @@
         },
         {
             "name": "TaskComponent",
-            "id": "component-TaskComponent-85ddb24eb6833e9b6d4dbce6ef092fdc45c526ed1d299b394cb22f6d10dd1ed7ff20dc5af9bd09000b11719ec6b00c43098ac3961f519325707f91a6f709ef9d",
+            "id": "component-TaskComponent-a0c7e450790efbf2a093f4c87e29482aad8099c2b24a15ece5e95e2ed3570975a8df4089f292629598043210ef15cbf112320b125976fd269f19b1c98f280e54",
             "file": "src/app/components/task/task.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1070,7 +1070,7 @@
             "selector": "app-task",
             "styleUrls": [],
             "styles": [],
-            "template": "<div class=\"list-item {{ task?.state }}\">\n  <label\n    [attr.aria-label]=\"'archiveTask-' + task.id\"\n    for=\"checked-{{ task?.id }}\"\n    class=\"checkbox\"\n  >\n    <input\n      type=\"checkbox\"\n      disabled=\"true\"\n      [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\n      name=\"checked-{{ task?.id }}\"\n      id=\"checked-{{ task?.id }}\"\n    />\n    <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\"></span>\n  </label>\n  <label\n    [attr.aria-label]=\"task.title + ''\"\n    for=\"title-{{ task?.id }}\"\n    class=\"title\"\n  >\n    <input\n      type=\"text\"\n      [value]=\"task.title\"\n      readonly=\"true\"\n      id=\"title-{{ task?.id }}\"\n      name=\"title-{{ task?.id }}\"\n      placeholder=\"Input title\"\n    />\n  </label>\n  <button\n    *ngIf=\"task?.state !== 'TASK_ARCHIVED'\"\n    class=\"pin-button\"\n    [attr.aria-label]=\"'pinTask-' + task.id\"\n    (click)=\"onPin(task.id)\"\n  >\n    <span class=\"icon-star\"></span>\n  </button>\n</div>\n",
+            "template": "<div class=\"list-item {{ task?.state }}\">\n  <label\n    [attr.aria-label]=\"'archiveTask-' + task.id\"\n    for=\"checked-{{ task?.id }}\"\n    class=\"checkbox\"\n  >\n    <input\n      type=\"checkbox\"\n      disabled=\"true\"\n      [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\n      name=\"checked-{{ task?.id }}\"\n      id=\"checked-{{ task?.id }}\"\n    />\n    <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\"></span>\n  </label>\n  <label\n    [attr.aria-label]=\"task.title + ''\"\n    for=\"title-{{ task?.id }}\"\n    class=\"title\"\n  >\n    <input\n      type=\"text\"\n      [value]=\"task.title\"\n      readonly=\"true\"\n      id=\"title-{{ task?.id }}\"\n      name=\"title-{{ task?.id }}\"\n      placeholder=\"Input title\"\n     style=\"background: red;\"\n    />\n  </label>\n  <button\n    *ngIf=\"task?.state !== 'TASK_ARCHIVED'\"\n    class=\"pin-button\"\n    [attr.aria-label]=\"'pinTask-' + task.id\"\n    (click)=\"onPin(task.id)\"\n  >\n    <span class=\"icon-star\"></span>\n  </button>\n</div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -1078,7 +1078,7 @@
                     "name": "task",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 49,
+                    "line": 50,
                     "type": "Task",
                     "decorators": []
                 }
@@ -1089,7 +1089,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 57,
+                    "line": 58,
                     "type": "EventEmitter"
                 },
                 {
@@ -1097,7 +1097,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 53,
+                    "line": 54,
                     "type": "EventEmitter"
                 }
             ],
@@ -1116,7 +1116,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 70,
+                    "line": 71,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "rawdescription": "\n\nComponent method to trigger the onArchive event\n",
@@ -1124,8 +1124,8 @@
                     "jsdoctags": [
                         {
                             "name": {
-                                "pos": 1743,
-                                "end": 1745,
+                                "pos": 1777,
+                                "end": 1779,
                                 "flags": 4227072,
                                 "modifierFlagsCache": 0,
                                 "transformFlags": 0,
@@ -1136,8 +1136,8 @@
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
-                                "pos": 1737,
-                                "end": 1742,
+                                "pos": 1771,
+                                "end": 1776,
                                 "flags": 4227072,
                                 "modifierFlagsCache": 0,
                                 "transformFlags": 0,
@@ -1161,7 +1161,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 63,
+                    "line": 64,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "rawdescription": "\n\nComponent method to trigger the onPin event\n",
@@ -1169,8 +1169,8 @@
                     "jsdoctags": [
                         {
                             "name": {
-                                "pos": 1604,
-                                "end": 1606,
+                                "pos": 1638,
+                                "end": 1640,
                                 "flags": 4227072,
                                 "modifierFlagsCache": 0,
                                 "transformFlags": 0,
@@ -1181,8 +1181,8 @@
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
-                                "pos": 1598,
-                                "end": 1603,
+                                "pos": 1632,
+                                "end": 1637,
                                 "flags": 4227072,
                                 "modifierFlagsCache": 0,
                                 "transformFlags": 0,
@@ -1201,7 +1201,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { Task } from 'src/app/models/task.model';\n\n@Component({\n  selector: 'app-task',\n  template: `\n    <div class=\"list-item {{ task?.state }}\">\n      <label\n        [attr.aria-label]=\"'archiveTask-' + task.id\"\n        for=\"checked-{{ task?.id }}\"\n        class=\"checkbox\"\n      >\n        <input\n          type=\"checkbox\"\n          disabled=\"true\"\n          [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\n          name=\"checked-{{ task?.id }}\"\n          id=\"checked-{{ task?.id }}\"\n        />\n        <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\"></span>\n      </label>\n      <label\n        [attr.aria-label]=\"task.title + ''\"\n        for=\"title-{{ task?.id }}\"\n        class=\"title\"\n      >\n        <input\n          type=\"text\"\n          [value]=\"task.title\"\n          readonly=\"true\"\n          id=\"title-{{ task?.id }}\"\n          name=\"title-{{ task?.id }}\"\n          placeholder=\"Input title\"\n        />\n      </label>\n      <button\n        *ngIf=\"task?.state !== 'TASK_ARCHIVED'\"\n        class=\"pin-button\"\n        [attr.aria-label]=\"'pinTask-' + task.id\"\n        (click)=\"onPin(task.id)\"\n      >\n        <span class=\"icon-star\"></span>\n      </button>\n    </div>\n  `,\n})\nexport class TaskComponent {\n  @Input() task: Task;\n\n  // tslint:disable-next-line: no-output-on-prefix\n  @Output()\n  onPinTask = new EventEmitter<Event>();\n\n  // tslint:disable-next-line: no-output-on-prefix\n  @Output()\n  onArchiveTask = new EventEmitter<Event>();\n\n  /**\n   * Component method to trigger the onPin event\n   * @param id string\n   */\n  onPin(id: any) {\n    this.onPinTask.emit(id);\n  }\n  /**\n   * Component method to trigger the onArchive event\n   * @param id string\n   */\n  onArchive(id: any) {\n    this.onArchiveTask.emit(id);\n  }\n}",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { Task } from 'src/app/models/task.model';\n\n@Component({\n  selector: 'app-task',\n  template: `\n    <div class=\"list-item {{ task?.state }}\">\n      <label\n        [attr.aria-label]=\"'archiveTask-' + task.id\"\n        for=\"checked-{{ task?.id }}\"\n        class=\"checkbox\"\n      >\n        <input\n          type=\"checkbox\"\n          disabled=\"true\"\n          [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\n          name=\"checked-{{ task?.id }}\"\n          id=\"checked-{{ task?.id }}\"\n        />\n        <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\"></span>\n      </label>\n      <label\n        [attr.aria-label]=\"task.title + ''\"\n        for=\"title-{{ task?.id }}\"\n        class=\"title\"\n      >\n        <input\n          type=\"text\"\n          [value]=\"task.title\"\n          readonly=\"true\"\n          id=\"title-{{ task?.id }}\"\n          name=\"title-{{ task?.id }}\"\n          placeholder=\"Input title\"\n         style=\"background: red;\"\n        />\n      </label>\n      <button\n        *ngIf=\"task?.state !== 'TASK_ARCHIVED'\"\n        class=\"pin-button\"\n        [attr.aria-label]=\"'pinTask-' + task.id\"\n        (click)=\"onPin(task.id)\"\n      >\n        <span class=\"icon-star\"></span>\n      </button>\n    </div>\n  `,\n})\nexport class TaskComponent {\n  @Input() task: Task;\n\n  // tslint:disable-next-line: no-output-on-prefix\n  @Output()\n  onPinTask = new EventEmitter<Event>();\n\n  // tslint:disable-next-line: no-output-on-prefix\n  @Output()\n  onArchiveTask = new EventEmitter<Event>();\n\n  /**\n   * Component method to trigger the onPin event\n   * @param id string\n   */\n  onPin(id: any) {\n    this.onPinTask.emit(id);\n  }\n  /**\n   * Component method to trigger the onArchive event\n   * @param id string\n   */\n  onArchive(id: any) {\n    this.onArchiveTask.emit(id);\n  }\n}",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
